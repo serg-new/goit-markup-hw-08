@@ -1,0 +1,74 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    opacity: 1;
+    background-color: var(--fon-backdrop);
+    transition: opacity 250ms,
+        visibility 250ms;
+}
+.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    transform: scale(1.0);
+}
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 4px;
+
+    height: 609px;
+    width: 450px;
+
+    background-color: var(--hero-text-color);
+    transition: transform 250ms var(--time);
+    padding: 40px;
+    overflow: hidden;
+    
+    @media screen and (min-width: 1200px) {
+            width: 528px;
+            height: 581px;
+        }
+    
+        
+
+    &__close-button {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        width: 30px;
+        height: 30px;
+
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 50%;
+        cursor: pointer;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        background-color: var(--hero-text-color);
+
+        transition: opacity 2500ms,
+        visibility 2500ms;
+
+
+}
+    &__close-icon {
+        fill: #000000;
+        transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: var(--time);
+
+           &:hover {
+    fill: var(--accent-text-color);
+        }
+           &:focus {
+        visibility: 0;
+        }
+}
+}

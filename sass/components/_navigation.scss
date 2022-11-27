@@ -1,0 +1,86 @@
+.page-header{
+    @media screen and (min-width: 768px) {
+            display: flex;
+}
+}
+
+.nav :hover,
+.nav :focus {
+    color: var(--accent-text-color);
+
+}
+.page-nav {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+}
+.nav__list {
+    display: flex;
+
+
+
+}
+
+.nav__link {
+    display: block;
+    color: var(--primary-text-color);
+    font-weight: 500;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: var(--time);
+    
+        &:focus {
+            color: var(--accent-text-color);
+        }
+    
+        &::after {
+            opacity: 1;
+            color: var(--accent-text-color);
+        }
+     @media screen and (min-width: 768px) and (max-width: 1199px) {
+        &::after {
+        bottom: -5px;
+        }
+    }
+}
+.current-page {
+    position: relative;
+    color: var(--accent-text-color);
+
+    &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        left: 0;
+        bottom: -2px;
+        width: 100%;
+        height: 4px;
+        border-radius: 2px;
+        background-color: currentColor;
+    }
+}
+.nav__item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.nav {
+display: flex;
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-left: 87px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 93px;
+    }
+}
