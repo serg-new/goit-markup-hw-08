@@ -2,13 +2,14 @@
     display: flex;
     align-items: center;
     margin-left: auto;
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 768px) {
             display: none;
         }
     
         @media screen and (min-width: 768px) and (max-width: 1199px) {
             display: block;
-            padding: 21px 0;
+            
+            padding: 20px 0;
             margin-left: auto;
         }
     
@@ -21,12 +22,14 @@
 
 .aut-nav__icon {
     fill: currentColor;
+    gap: 10px;
 
 }
 
 .aut-nav__item--left {
     @media screen and (min-width: 1200px) {
     margin-left: 50px;
+   
 }
 }
 
@@ -39,6 +42,7 @@
     letter-spacing: 0.02em;
     text-decoration: none;
     
+    gap: 10px;
 
 
     transition-property: color;
@@ -63,8 +67,10 @@
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
             display: block;
+           
             &:not(:last-child) {
                 margin-bottom: 10px;
+
             }
         }
     

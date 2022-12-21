@@ -1,10 +1,14 @@
-
+.mobile-menu{
+  
+        max-height: 798px;
+        z-index: 2;
+}
 
 
 .aut-menu-contacts{
     display: block;
     margin-top: 302px;
-    @media screen and (min-width: 480px) and (max-width: 767px) {
+    @media screen and (min-width: 480px) and (max-width: 768px) {
             width: 480px;
         }
 }
@@ -13,6 +17,7 @@
 
 .aut-mobile-menu {
     margin-bottom: 64px;
+    
 
 }
 
@@ -28,6 +33,7 @@
     letter-spacing: 0.02em;
     color: var(--secondary-text-color);
     display: block;
+    margin-bottom: 32px;
 
 
 
@@ -64,8 +70,7 @@
 }
 .aut-mobile-menu__link--mail{
     font-size: 24px;
-    margin-bottom: 64px;
-    margin-top: 32px;
+  
 }
 .menu-social__line::after {
     position: absolute;
