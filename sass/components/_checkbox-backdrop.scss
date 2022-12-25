@@ -42,6 +42,11 @@
     letter-spacing: 0.03em;
     text-decoration: none;
     color: var(--secondary-text-color);
+    font-size: 12px;
+    @media screen and (min-width: 1200px) {
+            font-size: 14px;
+        }
+
 }
 
 .checkbox__input:checked+.checkbox__icon {
